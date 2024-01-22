@@ -17,9 +17,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/calculadora-app",
+            "outputPath": "dist/calculadora-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref": "https://keylarivasseminario.github.io/calculadora-angular/",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
@@ -125,6 +126,9 @@
               "devServerTarget": "calculadora-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
