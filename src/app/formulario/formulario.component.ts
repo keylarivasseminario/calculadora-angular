@@ -10,7 +10,9 @@ export class FormularioComponent {
   operandoB : number;
   
 
-@Output() resultadoSuma=new EventEmitter<number>;
+
+@Output() resultadoSuma = new EventEmitter<number>();
+
 
   sumar():void{
    let resultado = this.operandoA + this.operandoB;
