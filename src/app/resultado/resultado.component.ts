@@ -9,4 +9,8 @@ export class ResultadoComponent {
 
   @Input() resultadoHijo: number;
 
+ 
+
 }
+
+
